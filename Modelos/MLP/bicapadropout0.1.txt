@@ -1,0 +1,50 @@
+Model: "sequential_13"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_13 (Flatten)        (None, 784)               0         
+                                                                 
+ dropout_6 (Dropout)         (None, 784)               0         
+                                                                 
+ dense_45 (Dense)            (None, 396)               310860    
+                                                                 
+ dropout_7 (Dropout)         (None, 396)               0         
+                                                                 
+ dense_46 (Dense)            (None, 396)               157212    
+                                                                 
+ dropout_8 (Dropout)         (None, 396)               0         
+                                                                 
+ dense_47 (Dense)            (None, 10)                3970      
+                                                                 
+=================================================================
+Total params: 472,042
+Trainable params: 472,042
+Non-trainable params: 0
+_________________________________________________________________
+
+Loss: binary_crossentropy
+
+Optimizer:
+name:Adamax
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.002
+beta_1:0.9
+beta_2:0.999
+epsilon:1e-07
+
+f1 macro: 0.8931821977531721
+auc: 0.9914560393272305
+acc: 0.8938666582107544
+loss: 0.06461072713136673
+precision: 0.9061859846115112
+recall: 0.8848000168800354
+Activation: relu
+Batch: 256

@@ -1,0 +1,54 @@
+Model: "sequential_29"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_29 (Flatten)        (None, 784)               0         
+                                                                 
+ dropout_61 (Dropout)        (None, 784)               0         
+                                                                 
+ dense_100 (Dense)           (None, 1000)              785000    
+                                                                 
+ dropout_62 (Dropout)        (None, 1000)              0         
+                                                                 
+ dense_101 (Dense)           (None, 1000)              1001000   
+                                                                 
+ dropout_63 (Dropout)        (None, 1000)              0         
+                                                                 
+ dense_102 (Dense)           (None, 1000)              1001000   
+                                                                 
+ dropout_64 (Dropout)        (None, 1000)              0         
+                                                                 
+ dense_103 (Dense)           (None, 10)                10010     
+                                                                 
+=================================================================
+Total params: 2,797,010
+Trainable params: 2,797,010
+Non-trainable params: 0
+_________________________________________________________________
+
+Loss: binary_crossentropy
+
+Optimizer:
+name:Adamax
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.002
+beta_1:0.9
+beta_2:0.999
+epsilon:1e-07
+
+f1 macro: 0.8939453997667591
+auc: 0.9918773187651755
+acc: 0.8929333090782166
+loss: 0.05572473257780075
+precision: 0.9065964221954346
+recall: 0.8832666873931885
+Activation: leaky relu
+Batch: 256

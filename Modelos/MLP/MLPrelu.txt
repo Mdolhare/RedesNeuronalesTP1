@@ -1,0 +1,41 @@
+Model: "sequential_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_5 (Flatten)         (None, 784)               0         
+                                                                 
+ dense_9 (Dense)             (None, 392)               307720    
+                                                                 
+ dense_10 (Dense)            (None, 10)                3930      
+                                                                 
+=================================================================
+Total params: 311,650
+Trainable params: 311,650
+Non-trainable params: 0
+_________________________________________________________________
+
+Loss: categorical_crossentropy
+
+Optimizer:
+name:SGD
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.001
+momentum:0.0
+nesterov:False
+
+f1 macro: 0.8452846442429769
+auc: 0.9835368433010533
+acc: 0.8470666408538818
+loss: 0.515917956829071
+precision: 0.8685131072998047
+recall: 0.8278666734695435
+Activation: relu
+Batch: 32

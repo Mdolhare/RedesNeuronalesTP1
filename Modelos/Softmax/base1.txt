@@ -1,0 +1,38 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 784)               0         
+                                                                 
+ dense (Dense)               (None, 10)                7850      
+                                                                 
+=================================================================
+Total params: 7,850
+Trainable params: 7,850
+Non-trainable params: 0
+_________________________________________________________________
+
+Loss: categorical_crossentropy
+
+Optimizer:
+name:Adam
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.01
+beta_1:0.9
+beta_2:0.999
+epsilon:1e-07
+amsgrad:False
+
+f1 macro: 0.7490577357570177
+auc: 0.8985385004527267
+acc: 0.7733333110809326
+loss: 64.21087646484375
+precision: 

@@ -1,0 +1,54 @@
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_1 (Flatten)         (None, 784)               0         
+                                                                 
+ dropout_4 (Dropout)         (None, 784)               0         
+                                                                 
+ dense_4 (Dense)             (None, 1000)              785000    
+                                                                 
+ dropout_5 (Dropout)         (None, 1000)              0         
+                                                                 
+ dense_5 (Dense)             (None, 1000)              1001000   
+                                                                 
+ dropout_6 (Dropout)         (None, 1000)              0         
+                                                                 
+ dense_6 (Dense)             (None, 1000)              1001000   
+                                                                 
+ dropout_7 (Dropout)         (None, 1000)              0         
+                                                                 
+ dense_7 (Dense)             (None, 10)                10010     
+                                                                 
+=================================================================
+Total params: 2,797,010
+Trainable params: 2,797,010
+Non-trainable params: 0
+_________________________________________________________________
+
+Loss: categorical_crossentropy
+
+Optimizer:
+name:Adamax
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.002
+beta_1:0.9
+beta_2:0.999
+epsilon:1e-07
+
+f1 macro: 0.9037333954413462
+auc: 0.9926744810355042
+acc: 0.9035999774932861
+loss: 0.32428422570228577
+precision: 0.9173656105995178
+recall: 0.8895999789237976
+Activation: relu
+Batch: 256

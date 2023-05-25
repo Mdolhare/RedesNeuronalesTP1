@@ -1,0 +1,54 @@
+Model: "sequential_21"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_21 (Flatten)        (None, 784)               0         
+                                                                 
+ dropout_30 (Dropout)        (None, 784)               0         
+                                                                 
+ dense_69 (Dense)            (None, 550)               431750    
+                                                                 
+ dropout_31 (Dropout)        (None, 550)               0         
+                                                                 
+ dense_70 (Dense)            (None, 550)               303050    
+                                                                 
+ dropout_32 (Dropout)        (None, 550)               0         
+                                                                 
+ dense_71 (Dense)            (None, 550)               303050    
+                                                                 
+ dropout_33 (Dropout)        (None, 550)               0         
+                                                                 
+ dense_72 (Dense)            (None, 10)                5510      
+                                                                 
+=================================================================
+Total params: 1,043,360
+Trainable params: 1,043,360
+Non-trainable params: 0
+_________________________________________________________________
+
+Loss: binary_crossentropy
+
+Optimizer:
+name:Adamax
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.002
+beta_1:0.9
+beta_2:0.999
+epsilon:1e-07
+
+f1 macro: 0.8956256960181623
+auc: 0.9921529678568527
+acc: 0.8964666724205017
+loss: 0.052446234971284866
+precision: 0.9110286235809326
+recall: 0.8833333253860474
+Activation: relu
+Batch: 256

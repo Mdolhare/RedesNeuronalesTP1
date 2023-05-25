@@ -1,0 +1,44 @@
+Model: "sequential_9"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_9 (Flatten)         (None, 784)               0         
+                                                                 
+ dense_33 (Dense)            (None, 392)               307720    
+                                                                 
+ dense_34 (Dense)            (None, 196)               77028     
+                                                                 
+ dense_35 (Dense)            (None, 10)                1970      
+                                                                 
+=================================================================
+Total params: 386,718
+Trainable params: 386,718
+Non-trainable params: 0
+_________________________________________________________________
+
+Loss: binary_crossentropy
+
+Optimizer:
+name:Adamax
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.002
+beta_1:0.9
+beta_2:0.999
+epsilon:1e-07
+
+f1 macro: 0.8744218020732777
+auc: 0.9878639098780612
+acc: 0.8756666779518127
+loss: 0.112765833735466
+precision: 0.883184552192688
+recall: 0.8704666495323181
+Activation: relu
+Batch: 256

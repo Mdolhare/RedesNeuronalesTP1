@@ -1,0 +1,66 @@
+Model: "sequential_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_3 (Flatten)         (None, 784)               0         
+                                                                 
+ dropout_4 (Dropout)         (None, 784)               0         
+                                                                 
+ batch_normalization_4 (Batc  (None, 784)              3136      
+ hNormalization)                                                 
+                                                                 
+ dense_6 (Dense)             (None, 1000)              785000    
+                                                                 
+ dropout_5 (Dropout)         (None, 1000)              0         
+                                                                 
+ batch_normalization_5 (Batc  (None, 1000)             4000      
+ hNormalization)                                                 
+                                                                 
+ dense_7 (Dense)             (None, 1000)              1001000   
+                                                                 
+ dropout_6 (Dropout)         (None, 1000)              0         
+                                                                 
+ batch_normalization_6 (Batc  (None, 1000)             4000      
+ hNormalization)                                                 
+                                                                 
+ dense_8 (Dense)             (None, 1000)              1001000   
+                                                                 
+ dropout_7 (Dropout)         (None, 1000)              0         
+                                                                 
+ batch_normalization_7 (Batc  (None, 1000)             4000      
+ hNormalization)                                                 
+                                                                 
+ dense_9 (Dense)             (None, 10)                10010     
+                                                                 
+=================================================================
+Total params: 2,812,146
+Trainable params: 2,804,578
+Non-trainable params: 7,568
+_________________________________________________________________
+
+Loss: categorical_crossentropy
+
+Optimizer:
+name:Adamax
+weight_decay:None
+clipnorm:None
+global_clipnorm:None
+clipvalue:None
+use_ema:False
+ema_momentum:0.99
+ema_overwrite_frequency:None
+jit_compile:False
+is_legacy_optimizer:False
+learning_rate:0.002
+beta_1:0.9
+beta_2:0.999
+epsilon:1e-07
+
+f1 macro: 0.9034643325281776
+auc: 0.9930083561648357
+acc: 0.9035999774932861
+loss: 0.3502616584300995
+precision: 0.9078629016876221
+recall: 0.900600016117096
+Activation: relu
+Batch: 256
