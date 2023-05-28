@@ -1,10 +1,10 @@
-Model: "sequential"
+Model: "sequential_1"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
- flatten (Flatten)           (None, 784)               0         
+ flatten_1 (Flatten)         (None, 784)               0         
                                                                  
- dense (Dense)               (None, 10)                7850      
+ dense_1 (Dense)             (None, 10)                7850      
                                                                  
 =================================================================
 Total params: 7,850
@@ -25,14 +25,15 @@ ema_momentum:0.99
 ema_overwrite_frequency:None
 jit_compile:False
 is_legacy_optimizer:False
-learning_rate:0.01
+learning_rate:0.001
 beta_1:0.9
 beta_2:0.999
 epsilon:1e-07
 amsgrad:False
 
-f1 macro: 0.7490577357570177
-auc: 0.8985385004527267
-acc: 0.7733333110809326
-loss: 64.21087646484375
-precision: 
+f1 macro: 0.8522080386001187
+auc: 0.985116159128886
+acc: 0.8524666428565979
+loss: 0.4296886622905731
+precision: 0.886904776096344
+recall: 0.8145333528518677
