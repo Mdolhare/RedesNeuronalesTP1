@@ -10,7 +10,7 @@ plt.style.use('bmh')
 def zero50(arr):
     threshold = np.percentile(arr, 50)
     arr_copy = np.copy(arr)
-    arr_copy[arr_copy > threshold] = 0
+    arr_copy[arr_copy < threshold] = 0
 
     return arr_copy
 
@@ -196,7 +196,7 @@ import os
 def plotVarHyperAcc(): 
     cols = ['Val_accuracy', 'Accuracy', 'param']
 
-    fig, ax = plt.subplots(nrows=2, ncols=4, figsize=(14, 5))
+    fig, ax = plt.subplots(nrows=2, ncols=4, figsize=(16, 5))
 
     for idx, file in enumerate(os.listdir('VarHyper')):
         if file.endswith('.txt'):
@@ -220,7 +220,7 @@ def plotVarHyperAcc():
 def plotVarHyperIter():
     cols = ['Val_accuracy', 'epochs', 'param']
 
-    fig, ax = plt.subplots(nrows=2, ncols=4, figsize=(14, 5))
+    fig, ax = plt.subplots(nrows=2, ncols=4, figsize=(16, 5))
 
     for idx, file in enumerate(os.listdir('VarHyperIter')):
         if file.endswith('.txt'):
@@ -259,11 +259,11 @@ def plotHistSlant(train_morpho, labels, clases):
     fig, ax = plt.subplots(nrows=2, ncols=5, figsize=(15, 6))
 
     for i in range(5):
-        ax[0, i].hist(train_morpho['slant'][labels.label.values == i], 25, edgecolor='k')
+        ax[0, i].hist(train_morpho['slant'][labels == i], 25, edgecolor='k')
         ax[0, i].set_title(clases[i])
 
     for i in range(5):
-        ax[1, i].hist(train_morpho['slant'][labels.label.values == (i+5)], 25, edgecolor='k')
+        ax[1, i].hist(train_morpho['slant'][labels == (i+5)], 25, edgecolor='k')
         ax[1, i].set_title(clases[i+5])
 
     fig.tight_layout()

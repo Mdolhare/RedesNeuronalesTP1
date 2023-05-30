@@ -1,31 +1,43 @@
-Model: "sequential_3"
+Model: "sequential_36"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
- flatten_1 (Flatten)         (None, 784)               0         
+ flatten_21 (Flatten)        (None, 784)               0         
                                                                  
  dropout_4 (Dropout)         (None, 784)               0         
                                                                  
- dense_5 (Dense)             (None, 1000)              785000    
+ batch_normalization_4 (Batc  (None, 784)              3136      
+ hNormalization)                                                 
+                                                                 
+ dense_25 (Dense)            (None, 1000)              785000    
                                                                  
  dropout_5 (Dropout)         (None, 1000)              0         
                                                                  
- dense_6 (Dense)             (None, 1000)              1001000   
+ batch_normalization_5 (Batc  (None, 1000)             4000      
+ hNormalization)                                                 
+                                                                 
+ dense_26 (Dense)            (None, 1000)              1001000   
                                                                  
  dropout_6 (Dropout)         (None, 1000)              0         
                                                                  
- dense_7 (Dense)             (None, 1000)              1001000   
+ batch_normalization_6 (Batc  (None, 1000)             4000      
+ hNormalization)                                                 
+                                                                 
+ dense_27 (Dense)            (None, 1000)              1001000   
                                                                  
  dropout_7 (Dropout)         (None, 1000)              0         
                                                                  
- dense_8 (Dense)             (None, 2)                 2002      
+ batch_normalization_7 (Batc  (None, 1000)             4000      
+ hNormalization)                                                 
                                                                  
- dense_9 (Dense)             (None, 10)                30        
+ dense_28 (Dense)            (None, 2)                 2002      
+                                                                 
+ dense_29 (Dense)            (None, 10)                30        
                                                                  
 =================================================================
-Total params: 2,789,032
-Trainable params: 2,789,032
-Non-trainable params: 0
+Total params: 2,804,168
+Trainable params: 2,796,600
+Non-trainable params: 7,568
 _________________________________________________________________
 
 Loss: categorical_crossentropy
@@ -46,11 +58,9 @@ beta_1:0.9
 beta_2:0.999
 epsilon:1e-07
 
-f1 macro: 0.852831359727061
-auc: 0.9801213238178021
-acc: 0.8507333397865295
-loss: 0.5487077236175537
-precision: 0.9391698837280273
-recall: 0.745199978351593
-Activation: relu
-Batch: 256
+f1 macro: 0.8972916556742991
+auc: 0.9903090307313527
+acc: 0.8952000141143799
+loss: 0.3696359395980835
+precision: 0.9095711708068848
+recall: 0.8838000297546387
